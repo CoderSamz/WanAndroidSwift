@@ -13,4 +13,5 @@ target 'WanAndroidSwift' do
   pod 'SwifterSwift', '~> 5.2.0'
   pod 'SVProgressHUD', '~> 2.2.5'
   pod 'LLCycleScrollView', '~> 1.6.0'
+  pod 'MJRefresh', '~> 3.7.5'
 end

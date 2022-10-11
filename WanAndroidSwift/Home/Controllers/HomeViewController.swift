@@ -13,11 +13,13 @@ import Alamofire
 import SwiftyJSON
 import SVProgressHUD
 import LLCycleScrollView
+import MJRefresh
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     weak var bannerView: LLCycleScrollView!
+    var currentPage = 0
     var bannerList = [JSON]()
     
     var homeData = [HomeModel]()
@@ -31,6 +33,12 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ArticleCell", bundle: nil), forCellReuseIdentifier: "ArticleCell")
+        tableView.tableFooterView = UIView() // 去除tableView空白时的分隔线
+        weak var weakSelf = self
+        tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+            weakSelf?.currentPage += 1
+            weakSelf?.fetchData(with: weakSelf?.currentPage ?? 0)
+        })
         // fetchData
         fetchData()
         bannerView = tableView.tableHeaderView! as? LLCycleScrollView
@@ -65,9 +73,10 @@ class HomeViewController: UIViewController {
         })
     }
     
-    func fetchData() {
+    func fetchData(with page: Int = 0) {
         SVProgressHUD.show(withStatus: "loading")
-        AF.request("https://www.wanandroid.com/article/list/0/json", method: .get, parameters: nil).responseData(completionHandler: { response in
+        print("https://www.wanandroid.com/article/list/\(page)/json")
+        AF.request("https://www.wanandroid.com/article/list/\(page)/json", method: .get, parameters: nil).responseData(completionHandler: { response in
 
             switch response.result {
                 case let .success(value):
@@ -82,13 +91,14 @@ class HomeViewController: UIViewController {
                             link: item["link"].stringValue,
                             publishTime: item["publishTime"].intValue,
                             niceDate: item["niceDate"].stringValue,
-                            author: item["shareUser"].stringValue
+                            author: item["author"].stringValue
                         )
                         self.homeData.append(model)
                     }
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                         SVProgressHUD.dismiss()
+                        self.tableView.mj_footer?.endRefreshing()
                     }
                 case let .failure(error):
                     print(error)

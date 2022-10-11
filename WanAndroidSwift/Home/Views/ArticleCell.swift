@@ -31,7 +31,7 @@ class ArticleCell: UITableViewCell {
     }
     
     func updateUI(model: HomeModel) {
-        autherLabel.text = model.author
+        autherLabel.text = model.author.count > 0 ? model.author : model.shareUser
         timeLabel.text = model.niceDate
         titleLabel.text = model.title
     }
