@@ -12,6 +12,6 @@ target 'WanAndroidSwift' do
   pod 'SwiftyJSON', '~> 5.0.1'
   pod 'SwifterSwift', '~> 5.2.0'
   pod 'SVProgressHUD', '~> 2.2.5'
-  pod 'LLCycleScrollView', '~> 1.6.0'
+  pod 'LLCycleScrollView', '~> 1.6.0', :inhibit_warnings => true # 不显示警告
   pod 'MJRefresh', '~> 3.7.5'
 end

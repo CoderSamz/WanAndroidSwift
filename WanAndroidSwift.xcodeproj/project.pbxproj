@@ -12,6 +12,8 @@
 		AE2B10A128F1B66B0049ECC0 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2B109F28F1B66B0049ECC0 /* ArticleCell.xib */; };
 		AE3AB6DE28F5DBCC00949A09 /* LabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3AB6DD28F5DBCC00949A09 /* LabViewController.swift */; };
 		AE3AB6E128F5E2B800949A09 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3AB6E028F5E2B800949A09 /* AnimationViewController.swift */; };
+		AE93107A29112CD8008E8290 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93107829112CD8008E8290 /* BluetoothViewController.swift */; };
+		AE93107B29112CD8008E8290 /* BluetoothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE93107929112CD8008E8290 /* BluetoothViewController.xib */; };
 		AE9339CB28BDDF910089CBF9 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9339CA28BDDF910089CBF9 /* HomeModel.swift */; };
 		AE9339CD28BDFD1B0089CBF9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9339CC28BDFD1B0089CBF9 /* WebViewController.swift */; };
 		AE9FED9628BC85EE00B2A31F /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9FED9528BC85EE00B2A31F /* Views.storyboard */; };
@@ -34,6 +36,8 @@
 		AE2B109F28F1B66B0049ECC0 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		AE3AB6DD28F5DBCC00949A09 /* LabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabViewController.swift; sourceTree = "<group>"; };
 		AE3AB6E028F5E2B800949A09 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		AE93107829112CD8008E8290 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		AE93107929112CD8008E8290 /* BluetoothViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluetoothViewController.xib; sourceTree = "<group>"; };
 		AE9339CA28BDDF910089CBF9 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		AE9339CC28BDFD1B0089CBF9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		AE9FED9528BC85EE00B2A31F /* Views.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Views.storyboard; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 			children = (
 				AE3AB6DD28F5DBCC00949A09 /* LabViewController.swift */,
 				AE3AB6E028F5E2B800949A09 /* AnimationViewController.swift */,
+				AE93107829112CD8008E8290 /* BluetoothViewController.swift */,
+				AE93107929112CD8008E8290 /* BluetoothViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2B10A128F1B66B0049ECC0 /* ArticleCell.xib in Resources */,
+				AE93107B29112CD8008E8290 /* BluetoothViewController.xib in Resources */,
 				AE9FED9628BC85EE00B2A31F /* Views.storyboard in Resources */,
 				AEFD8BAB287EA2EA00466553 /* LaunchScreen.storyboard in Resources */,
 				AEFD8BA8287EA2EA00466553 /* Assets.xcassets in Resources */,
@@ -326,6 +333,7 @@
 				AE9339CD28BDFD1B0089CBF9 /* WebViewController.swift in Sources */,
 				AEFD8BB5287FCF5A00466553 /* MainTabBarController.swift in Sources */,
 				AEFD8BB7287FCF8400466553 /* MainNavigationController.swift in Sources */,
+				AE93107A29112CD8008E8290 /* BluetoothViewController.swift in Sources */,
 				AE9339CB28BDDF910089CBF9 /* HomeModel.swift in Sources */,
 				AEA3920A28F3176800891608 /* LoginViewController.swift in Sources */,
 				AEFD8B9F287EA2E800466553 /* AppDelegate.swift in Sources */,

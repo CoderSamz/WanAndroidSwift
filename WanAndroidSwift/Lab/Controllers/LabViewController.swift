@@ -44,6 +44,7 @@ extension LabViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabCell", for: indexPath)
         cell.textLabel?.text = categies[indexPath.row]
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
@@ -52,7 +53,17 @@ extension LabViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension LabViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+            case 1:
+                let bluetoothVC = BluetoothViewController(nibName: "BluetoothViewController", bundle: nil)
+                self.parent?.navigationController?.pushViewController(bluetoothVC, animated: true)
+                
+            default:
+                break
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 
