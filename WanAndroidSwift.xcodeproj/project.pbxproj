@@ -10,6 +10,8 @@
 		AE2B109D28F1A20D0049ECC0 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B109C28F1A20D0049ECC0 /* BannerView.swift */; };
 		AE2B10A028F1B66B0049ECC0 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B109E28F1B66B0049ECC0 /* ArticleCell.swift */; };
 		AE2B10A128F1B66B0049ECC0 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2B109F28F1B66B0049ECC0 /* ArticleCell.xib */; };
+		AE3AB6DE28F5DBCC00949A09 /* LabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3AB6DD28F5DBCC00949A09 /* LabViewController.swift */; };
+		AE3AB6E128F5E2B800949A09 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3AB6E028F5E2B800949A09 /* AnimationViewController.swift */; };
 		AE9339CB28BDDF910089CBF9 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9339CA28BDDF910089CBF9 /* HomeModel.swift */; };
 		AE9339CD28BDFD1B0089CBF9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9339CC28BDFD1B0089CBF9 /* WebViewController.swift */; };
 		AE9FED9628BC85EE00B2A31F /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9FED9528BC85EE00B2A31F /* Views.storyboard */; };
@@ -30,6 +32,8 @@
 		AE2B109C28F1A20D0049ECC0 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		AE2B109E28F1B66B0049ECC0 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		AE2B109F28F1B66B0049ECC0 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		AE3AB6DD28F5DBCC00949A09 /* LabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabViewController.swift; sourceTree = "<group>"; };
+		AE3AB6E028F5E2B800949A09 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		AE9339CA28BDDF910089CBF9 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		AE9339CC28BDFD1B0089CBF9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		AE9FED9528BC85EE00B2A31F /* Views.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Views.storyboard; sourceTree = "<group>"; };
@@ -74,6 +78,23 @@
 				AE2B109F28F1B66B0049ECC0 /* ArticleCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AE3AB6DC28F5DB7C00949A09 /* Lab */ = {
+			isa = PBXGroup;
+			children = (
+				AE3AB6DF28F5DBD900949A09 /* Controllers */,
+			);
+			path = Lab;
+			sourceTree = "<group>";
+		};
+		AE3AB6DF28F5DBD900949A09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE3AB6DD28F5DBCC00949A09 /* LabViewController.swift */,
+				AE3AB6E028F5E2B800949A09 /* AnimationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		AE7B6A6828BCF90700ADDF28 /* Home */ = {
@@ -160,6 +181,7 @@
 				AEA3920828F3165700891608 /* Login */,
 				AEA3920428F3152300891608 /* Mine */,
 				AE7B6A6828BCF90700ADDF28 /* Home */,
+				AE3AB6DC28F5DB7C00949A09 /* Lab */,
 				AEFD8BB4287FCF5A00466553 /* MainTabBarController.swift */,
 				AEFD8BB6287FCF8400466553 /* MainNavigationController.swift */,
 				AEFD8BA7287EA2EA00466553 /* Assets.xcassets */,
@@ -295,8 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3AB6DE28F5DBCC00949A09 /* LabViewController.swift in Sources */,
 				AE2B10A028F1B66B0049ECC0 /* ArticleCell.swift in Sources */,
 				AE2B109D28F1A20D0049ECC0 /* BannerView.swift in Sources */,
+				AE3AB6E128F5E2B800949A09 /* AnimationViewController.swift in Sources */,
 				AEA3920628F3155000891608 /* MineViewController.swift in Sources */,
 				AEFD8BB9287FD08900466553 /* HomeViewController.swift in Sources */,
 				AE9339CD28BDFD1B0089CBF9 /* WebViewController.swift in Sources */,

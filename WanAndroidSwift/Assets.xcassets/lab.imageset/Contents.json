@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "smile.png",
+      "filename" : "lab_tab_icon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "smile@2x.png",
+      "filename" : "lab_tab_icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "smile@3x.png",
+      "filename" : "lab_tab_icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

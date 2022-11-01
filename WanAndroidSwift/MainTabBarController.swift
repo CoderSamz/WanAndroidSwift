@@ -36,6 +36,14 @@ class MainTabBarController: UITabBarController {
         homeVC.tabBarItem.selectedImage = UIImage(named: "smile")
         addChild(homeVC)
         
+        // 实验室
+        let labVC = LabViewController()
+        labVC.view.backgroundColor = .white
+        labVC.tabBarItem.image = UIImage(named: "lab")
+        labVC.tabBarItem.selectedImage = UIImage(named: "lab")
+        labVC.title = "实验室"
+        addChild(labVC)
+        
         // 我的
         let mineVC = viewsStoryboard.instantiateViewController(withIdentifier: "MineViewController")
         mineVC.view.backgroundColor = .white
