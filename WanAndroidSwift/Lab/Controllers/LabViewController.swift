@@ -20,6 +20,7 @@ class LabViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "LabCell")
+        tableView.tableFooterView = UIView() // 消除tableView底部多余横线
         updateUI()
     }
     
